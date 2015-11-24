@@ -75,7 +75,7 @@ func ParseFile(filePath string) (*APIDefinition, error) {
 		// versions in the same package - we'll have different branches
 		// for different versions. This one is hard-coded to 0.8.
 		// Still, would be good to think about this.
-		if ramlVersion != "#%RAML 0.8" {
+		if ramlVersion != "#%RAML 1.0" {
 			return nil, errors.New("Input file is not a RAML 0.8 file. Make " +
 				"sure the file starts with #%RAML 0.8")
 		}
